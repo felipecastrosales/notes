@@ -8,6 +8,12 @@ class HomePage extends StatelessWidget {
         title: Text('NOTES'),
         centerTitle: true,
       ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {
+          print('CLICOU');
+        },
+      ),
     );
   }
 }

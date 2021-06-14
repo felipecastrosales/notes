@@ -14,16 +14,18 @@ class _HomePageState extends State<HomePage> {
         title: Text('NOTES'),
         centerTitle: true,
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          for (var i = 0; i < count; i++) 
-            Card(
-              child: ListTile(
-                title: Text('My first note'),
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            for (var i = 0; i < count; i++) 
+              Card(
+                child: ListTile(
+                  title: Text('My first note'),
+                ),
               ),
-            ),
-        ],
+          ],
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),

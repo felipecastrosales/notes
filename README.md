@@ -2,7 +2,7 @@
     <img src="https://user-images.githubusercontent.com/59374587/121821625-7cf88f80-cc70-11eb-9d60-46599dc4009a.jpg" width="100" alt="Ignite - Flutter"/>
 </p>
 
-<h1 align="center">Counter | Ignite</h1>
+<h1 align="center">Notes | Ignite</h1>
 
 <h2 align="center">Topics 📋</h2>
 
@@ -21,23 +21,31 @@
 
 <h2 align="center">About 📖</h2>
    
-<p align="center">
+<p align="center"> 
+      
+   > * Em desenvolvimento!
+   
 </p>
 
 ---
 
 <h2 align="center">Preview 📱</h2>
 
-   <p align="center">
-      <img src="" width="400" alt="Ignite - Flutter">
-   </p>
+<p align="center"> 
+      
+   > * Em desenvolvimento!
+   
+</p>
 
 ---
 
 <h2 align="center">Challenges and Learnings along the way 🤯</h2>
 
-  <p>
-  </p>
+<p align="center"> 
+      
+   > * Em desenvolvimento!
+   
+</p>
 
 ---
 

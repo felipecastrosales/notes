@@ -14,6 +14,12 @@ class CreateNotePage extends StatelessWidget {
           ),
         ],
       ),
+      body: TextField(
+        maxLines: 10,
+        decoration: InputDecoration(
+          border: InputBorder.none,
+        ),
+      ),
     );
   }
 }

@@ -9,8 +9,10 @@ class HomePage extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-        child: ListTile(
-          title: Text('My first note'),
+        child: Card(
+          child: ListTile(
+            title: Text('My first note'),
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(

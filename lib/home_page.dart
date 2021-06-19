@@ -31,12 +31,13 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
-        onPressed: () {
-          Navigator.push(
+        onPressed: () async {
+          final description = await Navigator.push(
             context, MaterialPageRoute(
               builder: (context) => CreateNotePage(),
             ),
-          ).then((value) => debugPrint(value));
+          );
+          print(description);
         },
       ),
     );

@@ -33,11 +33,14 @@ class _HomePageState extends State<HomePage> {
         child: Icon(Icons.add),
         onPressed: () async {
           final description = await Navigator.push(
-            context, MaterialPageRoute(
+            context,
+            MaterialPageRoute(
               builder: (context) => CreateNotePage(),
             ),
           );
-          print(description);
+          setState(() {
+            notes.add(description);
+          });
         },
       ),
     );

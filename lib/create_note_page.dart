@@ -7,10 +7,13 @@ class CreateNotePage extends StatefulWidget {
 
 class _CreateNotePageState extends State<CreateNotePage> {
   var description = '';
+  var textController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     if (ModalRoute.of(context)!.settings.arguments != null) {
       description = ModalRoute.of(context)!.settings.arguments as String;
+      textController = TextEditingController(text: description);
     }
     return Scaffold(
       appBar: AppBar(
@@ -29,6 +32,7 @@ class _CreateNotePageState extends State<CreateNotePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextField(
+              controller: textController,
               maxLines: null,
               onChanged: (value) {
                 description = value;

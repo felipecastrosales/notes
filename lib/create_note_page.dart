@@ -9,6 +9,9 @@ class _CreateNotePageState extends State<CreateNotePage> {
   var description = '';
   @override
   Widget build(BuildContext context) {
+    if (ModalRoute.of(context)!.settings.arguments != null) {
+      description = ModalRoute.of(context)!.settings.arguments as String;
+    }
     return Scaffold(
       appBar: AppBar(
         title: Text('Create Note'),
@@ -23,7 +26,7 @@ class _CreateNotePageState extends State<CreateNotePage> {
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextField(
               maxLines: null,
@@ -32,6 +35,7 @@ class _CreateNotePageState extends State<CreateNotePage> {
                 setState(() {});
               },
             ),
+            SizedBox(height: 16),
             if (description.isNotEmpty)
               ElevatedButton(
                 onPressed: () {

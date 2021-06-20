@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'create_note_page.dart';
-
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -32,15 +30,11 @@ class _HomePageState extends State<HomePage> {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: () async {
-          final description = await Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => CreateNotePage(),
-            ),
-          );
-          setState(() {
-            notes.add(description);
-          });
+          final description = await Navigator
+              .pushNamed(context, '/create-note');
+          if (description != null) {
+            setState(() => notes.add(description as String));
+          }
         },
       ),
     );

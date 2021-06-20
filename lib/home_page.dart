@@ -23,11 +23,19 @@ class _HomePageState extends State<HomePage> {
                 child: ListTile(
                   title: Text(notes[i]),
                   onTap: () async {
-                    final description = await Navigator.pushNamed(
-                      context, '/create-note', arguments: notes[i],
+                    final response = await Navigator.pushNamed(
+                      context,
+                      '/create-note',
+                      arguments: notes[i],
                     );
-                    if (description != null) {
-                      setState(() => notes[i] = description as String);
+                    if (response != null) {
+                      var description = response as String;
+                      if (response.isEmpty) {
+                        notes.removeAt(i);
+                      } else {
+                        notes[i] = description;
+                      }
+                      setState(() {});
                     }
                   },
                 ),
@@ -38,8 +46,8 @@ class _HomePageState extends State<HomePage> {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: () async {
-          final description = await Navigator
-              .pushNamed(context, '/create-note');
+          final description =
+              await Navigator.pushNamed(context, '/create-note');
           if (description != null) {
             setState(() => notes.add(description as String));
           }

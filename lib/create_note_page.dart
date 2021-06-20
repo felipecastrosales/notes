@@ -39,7 +39,7 @@ class _CreateNotePageState extends State<CreateNotePage> {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(32),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -50,14 +50,25 @@ class _CreateNotePageState extends State<CreateNotePage> {
                 description = value;
                 setState(() {});
               },
+              decoration: InputDecoration(
+                labelText: 'Description',
+              ),
             ),
-            SizedBox(height: 16),
+            SizedBox(height: 32),
             if (description.isNotEmpty)
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.pop(context, description);
-                },
-                child: Text('Save'),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    width: 250,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.pop(context, description);
+                      },
+                      child: Text('Save'),
+                    ),
+                  ),
+                ],
               ),
           ],
         ),

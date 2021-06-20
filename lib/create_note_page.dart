@@ -10,11 +10,18 @@ class _CreateNotePageState extends State<CreateNotePage> {
   var textController = TextEditingController();
 
   @override
+  void initState() {
+    WidgetsBinding.instance!.addPersistentFrameCallback((_) {
+      if (ModalRoute.of(context)!.settings.arguments != null) {
+        description = ModalRoute.of(context)!.settings.arguments as String;
+        textController.text = description;
+      }
+    });
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    if (ModalRoute.of(context)!.settings.arguments != null) {
-      description = ModalRoute.of(context)!.settings.arguments as String;
-      textController = TextEditingController(text: description);
-    }
     return Scaffold(
       appBar: AppBar(
         title: Text('Create Note'),

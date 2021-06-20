@@ -22,12 +22,21 @@ class _HomePageState extends State<HomePage> {
               Card(
                 child: ListTile(
                   title: Text(notes[i]),
-                  onTap: (){
-                    Navigator.pushNamed(
-                      context, 
-                      '/create-note', 
+                  onTap: () async {
+                    final response = await Navigator.pushNamed(
+                      context,
+                      '/create-note',
                       arguments: notes[i],
                     );
+                    if (response != null) {
+                      var description = response as String;
+                      if (response.isEmpty) {
+                        notes.removeAt(i);
+                      } else {
+                        notes[i] = description;
+                      }
+                      setState(() {});
+                    }
                   },
                 ),
               ),
@@ -37,8 +46,8 @@ class _HomePageState extends State<HomePage> {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: () async {
-          final description = await Navigator
-              .pushNamed(context, '/create-note');
+          final description =
+              await Navigator.pushNamed(context, '/create-note');
           if (description != null) {
             setState(() => notes.add(description as String));
           }

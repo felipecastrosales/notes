@@ -42,7 +42,7 @@
 
 <p align="center"> 
 
-      Despite being a very basic app, this project made me review several very important and essential concepts, a foundation will always be essential. I enjoyed developing this app, and knowing that it is simple and that I was able to follow normally, for sure if it was a few months ago, I would have a lot of doubts, but this one, I didn't have any and I could explain what I did to anyone.
+   Despite being a very basic app, this project made me review several very important and essential concepts, a foundation will always be essential. I enjoyed developing this app, and knowing that it is simple and that I was able to follow normally, for sure if it was a few months ago, I would have a lot of doubts, but this one, I didn't have any and I could explain what I did to anyone.
 
 </p>
 

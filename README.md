@@ -22,9 +22,10 @@
 <h2 align="center">About 📖</h2>
    
 <p align="center"> 
-      
-   > * Em desenvolvimento!
-   
+
+   This is a simple note app, very basic and focused on introducing Dart and Flutter, and most importantly, on creating a more solid base to introduce the next chapters.<br>
+   This app was made on Rocketseat's Ignite program. 💜🚀
+
 </p>
 
 ---
@@ -32,9 +33,7 @@
 <h2 align="center">Preview 📱</h2>
 
 <p align="center"> 
-      
-   > * Em desenvolvimento!
-   
+      <img src="https://user-images.githubusercontent.com/59374587/124525102-424bc800-ddd4-11eb-9fd0-3ae77cccda2e.gif" width="400" alt="Notes | Flutter - Ignite">
 </p>
 
 ---
@@ -42,9 +41,9 @@
 <h2 align="center">Challenges and Learnings along the way 🤯</h2>
 
 <p align="center"> 
-      
-   > * Em desenvolvimento!
-   
+
+      Despite being a very basic app, this project made me review several very important and essential concepts, a foundation will always be essential. I enjoyed developing this app, and knowing that it is simple and that I was able to follow normally, for sure if it was a few months ago, I would have a lot of doubts, but this one, I didn't have any and I could explain what I did to anyone.
+
 </p>
 
 ---
@@ -94,7 +93,7 @@
 
    ---
 
-   >This project was developed with ❤️ by **[@Felipe Sales](https://www.linkedin.com/in/felipecastrosales/)**, in the **["Ignite | Flutter"](https://app.rocketseat.com.br/)** by **[Rocketseat 🚀💜](https://www.rocketseat.com.br/)**.<br>
+   >This project was developed with ❤️ by **[@Felipe Sales](https://www.linkedin.com/in/felipecastrosales/)**, in the **[Ignite | Flutter](https://app.rocketseat.com.br/)** by **[Rocketseat 🚀💜](https://www.rocketseat.com.br/)**.<br>
    If it helped you, give ⭐, contribute, it will help me too 😉
 
 ---
